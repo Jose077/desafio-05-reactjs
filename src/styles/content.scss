@@ -24,10 +24,12 @@ main {
   width: 100%;
   margin-top: 5.625rem;
 
-  .movies-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4.75rem;
-    list-style: none;
-  }
+}
+
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4.75rem;
+  list-style: none;
 }

@@ -10,9 +10,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({ iconName, title, selected, ...rest }: ButtonProps) {
+
+  const color = selected ? '#FAE800' : '#FBFBFB';
+  const className = (selected && { className: 'selected' })
+
   return (
-    <button type="button" {...(selected && { className: 'selected' })} {...rest}>
-      <Icon name={iconName} color={selected ? '#FAE800' : '#FBFBFB'} />
+    <button type="button" {...className} {...rest}>
+      <Icon name={iconName} color={color} />
       {title}
     </button>
   );
